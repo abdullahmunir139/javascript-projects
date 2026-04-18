@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User data</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div id="refresh" class="users gap-5 bg-gradient-to-r from-gray-900 to-gray-800 flex items-center justify-center min-h-screen"></div>
+    <div>
+        <button 
+    id="refreshBtn"
+    class="absolute top-[60%] left-1/2 -translate-x-1/2 flex m-7 items-center gap-3 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold rounded-xl shadow-lg hover:scale-105 transition duration-300"
+  >
+    <!-- Icon (SVG) -->
+    <svg xmlns="http://www.w3.org/2000/svg" 
+         fill="none" 
+         viewBox="0 0 24 24" 
+         stroke-width="2" 
+         stroke="currentColor" 
+         class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" 
+        d="M16.023 9.348h4.992v4.992M19.015 14.34A7.5 7.5 0 1 1 6.5 6.5"/>
+    </svg>
+
+    Refresh
+  </button>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
