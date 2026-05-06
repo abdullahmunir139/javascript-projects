@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>CV Generator</title>
+</head>
+<body>
+    <header id="header">
+        <h2>CV Generater</h2>
+    </header>
+    <section id="form-section">
+        <div class="cv-wrapper" id="cv-content">
+            <div class="personal-info">
+            <img id="display-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaZ80m7zIQNgPcz7LcFeKq1J0-3OF-9IL4Fw&s" alt="Profile Photo">
+        <header class="heading">
+        <h1 id="display-title">My Name</h1>
+        <h5 id="display-name">abdullah munir</h5>
+        </header>
+
+        <div class="contact-section">
+        <h2>Contact</h2>
+        <p><i class="fa-solid fa-phone"></i> <span id="display-phone">phone Number</span></p>
+        <p><i class="fa-solid fa-envelope"></i> <span id="display-email"> abdullahmunir@gmail.com</span></p>
+        <p><i class="fa-solid fa-location-dot"></i> <span id="display-location"> Faisalabad, Pakistan</span></p>
+        </div>
+
+        <div class="skill-section">
+            <h2>Skills</h2>
+            <ul id="display-skills">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="language-section">
+            <h3>Languages</h3>
+            <ul id="display-languages">
+                <li>English</li>
+                <li>Urdu</li>
+            </ul>
+        </div>
+    </div >
+
+        <div class="personal-details">
+            <div class="profile-section">
+                <h2>Profile</h2>
+                <p id="display-about" style="width: 290px;">I am Software engineer with experience in a variety of programming lanuages and a track record of delievering high-quality code. I am skilled in problem-solving and have a strong background in computer sceience</p>
+            </div>
+
+            <div class="work-section">
+                <h2>Work Experience</h2>
+                <div id="display-experience">
+                    <h5>Senior Software Developer</h5>
+                    <ul style="width: 290px;">
+                    <li>Developed and maintained software using js, Python and C++</li>
+                    <li>led cross-functional teams to deliver successful software engineer</li>
+                    <li>Write a work experience of a senior software engineer</li>
+                </ul>
+            </div>
+        </div>
+                
+            <div class="education-section">
+                <h2>Educations</h2>
+                <ul id="display-education" style="margin-top: 10px;">
+                    <li>FSC in Non-Medical engineering</li>
+                    <li>Bachlor Science in Computer Science</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+
+    <section id="form-section">
+         <div class="form-container">
+        <h2>Personalize Your CV</h2>
+        
+        <!-- Row 1: Name & Title -->
+        <div class="form-row">
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" id="name-input" placeholder="Enter your name">
+            </div>
+            <div class="input-group">
+                <label>Job Title</label>
+                <input type="text" id="title-input" placeholder="e.g. Full Stack Developer">
+            </div>
+        </div>
+
+        <!-- Row 2: Contacts -->
+        <div class="form-row">
+            <div class="input-group">
+                <label>Phone</label>
+                <input type="text" id="phone-input" placeholder="+92...">
+            </div>
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" id="email-input" placeholder="example@mail.com">
+            </div>
+            <div class="input-group">
+                <label>Location</label>
+                <input type="text" id="location-input" placeholder="City, Country">
+            </div>
+        </div>
+
+        <!-- Row 3: Image & Skills -->
+        <div class="form-row">
+            <div class="input-group">
+                <label>Profile Image</label>
+                <input type="file" id="image-input" accept="image/*">
+            </div>
+            <div class="input-group">
+                <label>Skills (Comma separated)</label>
+                <input type="text" id="skills-input" placeholder="HTML, CSS, JS">
+            </div>
+        </div>
+
+        <!-- Row 4: Full Width Sections -->
+        <div class="input-group full-width">
+            <label>About Me (Profile)</label>
+            <textarea id="about-input" rows="4" placeholder="Briefly describe yourself"></textarea>
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label>Work Experience</label>
+                <textarea id="experience-input" rows="3" placeholder="Job details..."></textarea>
+            </div>
+            <div class="input-group">
+                <label>Education</label>
+                <textarea id="education-input" rows="3" placeholder="Degree details..."></textarea>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer id="footer-section">
+        <button id="download-btn">Download PDF</button>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
